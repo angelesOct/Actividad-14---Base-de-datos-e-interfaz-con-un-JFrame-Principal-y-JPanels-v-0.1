@@ -24,6 +24,15 @@ public class ModelAgenda {
 
     private String nombre;
     private String email;
+    private String telefono;
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
 
     public String getNombre() {
         return nombre;
@@ -105,7 +114,7 @@ public class ModelAgenda {
             if(rs.isLast()==false) {                 
                 rs.next();                 
                 nombre = rs.getString("nombre");
-                email = rs.getString("email");                            
+                email = rs.getString("email");            
             } 
             else{
                 rs.previous();
