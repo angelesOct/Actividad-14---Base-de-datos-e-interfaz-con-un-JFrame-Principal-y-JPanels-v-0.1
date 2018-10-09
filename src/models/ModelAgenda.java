@@ -124,6 +124,18 @@ public class ModelAgenda {
      */
     public void moverAnteriorRegistro() {
         System.out.println("moverAnteriorRegistro");
+        try{             
+            if(rs.isLast()==false) {                 
+                rs.previous();                 
+                nombre = rs.getString("nombre");
+                email = rs.getString("email"); 
+            } 
+            else{
+                rs.next(); 
+        }
+        }catch(Exception err) {             
+                JOptionPane.showMessageDialog(null,"primer registro");         
+        }       
     }
 
     /**
