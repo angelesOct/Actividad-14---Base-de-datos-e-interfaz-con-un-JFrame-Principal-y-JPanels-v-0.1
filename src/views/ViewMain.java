@@ -36,15 +36,20 @@ public class ViewMain extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMenuBar1.setBackground(new java.awt.Color(0, 153, 153));
+
         jMenu1.setText("Archivo");
 
+        jmi_agenda.setBackground(new java.awt.Color(204, 255, 255));
         jmi_agenda.setText("Agenda");
         jMenu1.add(jmi_agenda);
 
+        jmi_detalle_contacto.setBackground(new java.awt.Color(204, 255, 255));
         jmi_detalle_contacto.setText("Detalle Cotacto");
         jMenu1.add(jmi_detalle_contacto);
         jMenu1.add(jSeparator1);
 
+        jmi_salir.setBackground(new java.awt.Color(204, 255, 255));
         jmi_salir.setText("Salir");
         jMenu1.add(jmi_salir);
 
