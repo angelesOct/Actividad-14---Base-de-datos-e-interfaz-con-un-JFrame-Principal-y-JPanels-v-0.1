@@ -7,7 +7,7 @@ CREATE TABLE contactos(
     nombre varchar(50) NOT NULL,
     email varchar(50) NOT NULL,
     telefono char(10) NOT NULL,
-)ENGINE=InnoDB DEFAULT CHARSET=latin1;;
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 INSERT INTO contactos (nombre, email) VALUES 
