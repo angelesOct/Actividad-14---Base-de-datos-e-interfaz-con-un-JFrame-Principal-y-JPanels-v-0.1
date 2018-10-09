@@ -124,5 +124,6 @@ public class ControllerAgenda {
     private void setValues() {
         viewAgenda.jtf_nombre.setText(modelAgenda.getNombre());
         viewAgenda.jtf_email.setText(modelAgenda.getEmail());
+        viewAgenda.jtf_telefono.setText(modelAgenda.getTelefono());
     }
 }
