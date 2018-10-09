@@ -78,6 +78,7 @@ public class ModelAgenda {
         try {
             nombre = rs.getString("nombre");
             email = rs.getString("email");
+            telefono = rs.getString("telefono");
         } catch (SQLException err) {
             JOptionPane.showMessageDialog(null, "Error model 102: " + err.getMessage());
 
@@ -96,6 +97,7 @@ public class ModelAgenda {
                 rs.first();                 
                 nombre = rs.getString("nombre");
                 email = rs.getString("email");
+                telefono = rs.getString("telefono");
             }         
         }catch(Exception err) {             
                 JOptionPane.showMessageDialog(null,"Error "+err.getMessage());         
@@ -114,7 +116,8 @@ public class ModelAgenda {
             if(rs.isLast()==false) {                 
                 rs.next();                 
                 nombre = rs.getString("nombre");
-                email = rs.getString("email");            
+                email = rs.getString("email");   
+                telefono = rs.getString("telefono");
             } 
             else{
                 rs.previous();
@@ -138,6 +141,7 @@ public class ModelAgenda {
                 rs.previous();                 
                 nombre = rs.getString("nombre");
                 email = rs.getString("email"); 
+                telefono = rs.getString("telefono");
             } 
             else{
                 rs.next(); 
@@ -159,6 +163,7 @@ public class ModelAgenda {
                 rs.last();                
                 nombre = rs.getString("nombre");
                 email = rs.getString("email");
+                telefono = rs.getString("telefono");
             }         
         }catch(Exception err) {             
                 JOptionPane.showMessageDialog(null,"Error "+err.getMessage());         
