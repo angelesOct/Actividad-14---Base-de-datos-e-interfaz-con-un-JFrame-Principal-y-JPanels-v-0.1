@@ -87,7 +87,7 @@ public class ControllerAgenda {
      */
     private void jbtn_primero_actionPerformed() {
         System.out.println("Action del boton jbtn_primero");
-         modelAgenda.moverPrimerRegistro();
+        modelAgenda.moverPrimerRegistro();
         setValues();
     }
 

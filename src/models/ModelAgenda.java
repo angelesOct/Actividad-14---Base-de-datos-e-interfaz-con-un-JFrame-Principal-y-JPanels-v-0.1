@@ -82,6 +82,15 @@ public class ModelAgenda {
      */
     public void moverPrimerRegistro() {
         System.out.println("moverPrimerRegistro");
+        try{             
+            if(rs.isLast()==false) {                 
+                rs.first();                 
+                nombre = rs.getString("nombre");
+                email = rs.getString("email");
+            }         
+        }catch(Exception err) {             
+                JOptionPane.showMessageDialog(null,"Error "+err.getMessage());         
+        } 
     }
 
     /**
@@ -92,6 +101,19 @@ public class ModelAgenda {
      */
     public void moverSiguienteRegistro() {
         System.out.println("moverSiguienteRegistro");
+        try{             
+            if(rs.isLast()==false) {                 
+                rs.next();                 
+                nombre = rs.getString("nombre");
+                email = rs.getString("email");                            
+            } 
+            else{
+                rs.previous();
+                JOptionPane.showMessageDialog(null,"ultimo registro");
+            }
+        }catch(Exception err) {             
+                JOptionPane.showMessageDialog(null,"Error "+err.getMessage());         
+        }
     }
 
     /**
